@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">pagina inicial</a>
+    <h1>Pagina de produtos</h1>
+    <ul>
+        <% for (let i = 0; i < products.length; i++) { %>
+            <li><%= products[i].name %> <a href=<%= '/products/' + products[i].id %>>more</a></li>
+        <% } %>
+    </ul>
+</body>
+</html>
